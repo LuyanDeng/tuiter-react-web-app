@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tuit</title>
+</head>
+
+<body>
+    <table>
+        <tbody>
+            <tr valign="top">
+                <td colspan="3">
+                    <!-- header -->
+                </td>
+            </tr>
+            <tr valign="top">
+                <td>
+                    <!-- left sidebar -->
+                    <h2>Navigation</h2>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="ExploreScreen/index.html">Explore</a></li>
+                        <li><a href="notifications.html">Notifications</a></li>
+                        <li><a href="messages.html">Messages</a></li>
+                        <li><a href="bookmarks/index.html">Bookmarks</a></li>
+                        <li><a href="lists.html">Lists</a></li>
+                        <li><a href="profile.html">Profile</a></li>
+                        <li><a href="tuit.html">Tuit</a></li>
+                        <li><a href="reply.html">Reply</a></li>
+                    </ul>
+                </td>
+                <td>
+                    <!-- main content -->
+                    <br>
+                    <!--Back to navigation screen-->
+                    <a href="navigation.html">Back</a>
+
+                    <h1>Tuiter</h1>
+                    <h2>Tuit</h2>
+
+                    <!--Owner account image-->
+                    <img width="48px" height="48px" src="images/profile1.jpeg" alt="user avatar"><br />
+
+                    <label for="tuit"></label>
+                    <textarea placeholder="What's happening" id="tuit"></textarea><br>
+
+                    <label for="dropdown"></label>
+                    <select id="dropdown">
+                        <option selected value="EVERYONE">Everyone can reply</option>
+                        <option value="FOLLOWING">People you follow</option>
+                        <option value="MENTIONED">Only people you mention</option>
+                    </select><br />
+
+                    <hr />
+                    <input type="file" />
+                    <button>Tuit</button>
+                    <hr />
+                </td>
+                <td>
+                    <!-- right sidebar -->
+                </td>
+            </tr>
+            <tr valign="top">
+                <td colspan="3">
+                    <!-- footer -->
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
