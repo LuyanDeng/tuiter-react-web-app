@@ -1,0 +1,10 @@
+
+
+.sidebar h2{
+    font-weight: 800;
+    font-size: 20px;
+    margin-right: 20px;
+}
+.sidebar .material-symbols-outlined .fab fa-twitter fa-2x{
+    padding: 20px;
+}
