@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Explore Tuiter</></title>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+
     <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <!-- FONT AWESOME -->
     <link href="../../vendor/fontawesome/css/all.css" rel="stylesheet"/>
     <link href=
                   "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
           rel="stylesheet"/>
-    <link href="index.css" rel="stylesheet"/>
+    <link href="../explore/index.css" rel="stylesheet"/>
 </head>
 <body>
 
@@ -17,166 +18,382 @@
 
     <div class="row">
         <!--   left column-->
-        <div class="d-block col-lg-2 col-md-2 col-sm-1">
+        <div class="d-block col-xxl-2 col-xl-2 col-lg-1 col-md-2 col-sm-2 col-2">
             <!-- left nav bar-->
             <div class="list-group">
-                <i class="fab fa-twitter fa-2x"></i><br/>
+                <i class="fab fa-twitter fa-2x custom-icon"></i><br/>
                 <a href="../home.html" class="list-group-item list-group-item-action active">
                     <i class="fa-solid fa-house me-2"></i>
-                    <span class="hide-text">Home</span>
+                    <span class="d-none d-xl-inline">Home</span>
                 </a>
                 <a href="#" class="list-group-item list-group-item-action">
                     <i class="fa-solid fa-magnifying-glass me-2"></i>
-                    <span class="hide-text">Explore</span>
+                    <span class="d-none d-xl-inline">Explore</span>
                 </a>
                 <a href="#" class="list-group-item list-group-item-action">
                     <i class="fa-regular fa-bell me-2"></i>
-                    <span class="hide-text">Notifications</span>
+                    <span class="d-none d-xl-inline">Notifications</span>
                 </a>
                 <a href="#" class="list-group-item list-group-item-action">
                     <i class="fa-regular fa-envelope me-2"></i>
-                    <span class="hide-text">Messages</span>
+                    <span class="d-none d-xl-inline">Messages</span>
                 </a>
                 <a href="#" class="list-group-item list-group-item-action">
                     <i class="fa-regular fa-bookmark me-2"></i>
-                    <span class="hide-text">Bookmarks</span>
+                    <span class="d-none d-xl-inline">Bookmarks</span>
                 </a>
                 <a href="#" class="list-group-item list-group-item-action">
                     <i class="fa-regular fa-list-alt me-2"></i>
-                    <span class="hide-text">Lists</span>
+                    <span class="d-none d-xl-inline">Lists</span>
                 </a>
                 <a href="#" class="list-group-item list-group-item-action">
                     <i class="fa-solid fa-user me-2"></i>
-                    <span class="hide-text">Profile</span>
+                    <span class="d-none d-xl-inline">Profile</span>
                 </a>
                 <a href="#" class="list-group-item list-group-item-action">
-                    <i class="fa-solid fa-ellipsis-h me-2"></i>
-                    <span class="hide-text">More</span>
+
+                    <span class="fa-stack">
+<i class="fas fa-circle fa-stack-2x "></i>
+<i class="fas fa-ellipsis-h fa-stack-1x fa-inverse "></i>
+</span>
+
+
+
+                    <span class="d-none d-xl-inline">More</span>
                 </a>
             </div>
 
-            <a role="button" href="#" class="btn btn-primary rounded-pill mt-2 w-100 ">Tweet</a>
+            <a role="button" href="#" class="btn tweet-button rounded-pill ">Tweet</a>
         </div>
 
         <!--Center Column-->
-        <div class="col-lg-6">
+
             <!-- Main content -->
+<!--        col is 10 when is medium or less medium-->
+
             <div class="d-block col-10 col-sm-10 col-md-10 col-lg-7 col-xl-6 col-xxl-6">
-                <!--            Search filed-->
+                <!--  Search filed-->
                 <div class="row align-items-center mx-0">
-                    <div class="col-10 px-0">
-                    <div class="input-group">
-
-                        <span class="input-group-text search-icon">
-            <i class="fas fa-search"></i>
-          </span>
-
-                        <label for="search-field"></label>
-                        <input type="text" class="form-control rounded-pill" id="search-field" placeholder="Search">
-                        <span class="input-group-text search-icon">
-            <i class="fas fa-gear"></i>
-          </span>
 
 
-                    </div>
+                        <div class="search-column bg-white ">
+                            <div class="input-group bg-white">
+                                <span class="input-group-text bg-white border-end-0 rounded-end rounded-pill">
+                            <i class="fas fa-search"></i>
+                                    </span>
+
+                                <input type="text"
+
+                                   class="form-control border-start-0 rounded-start rounded-pill me-3"
+                                   placeholder="Search">
+                                <div class="col-1 wd-cog pe-0">
+                                    <a href="explore-settings.html" class="fas fa-cog fa-2x text-decoration-none  float-end "></a>
+                                </div>
+                            </div>
+                        </div>
+
                 </div>
-                </div>
 
-            </div>
-<!--      Navigation     Tab-->
-            <div class="nav tab mt-2">
-                <ul class="nav nav-pills">
+
+            <!--      Navigation     Tab-->
+
+                <ul class="nav nav-tabs">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="for-you.html">Active</a>
+                        <a class="nav-link active" aria-current="page" href="for-you.html">For you</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="trending.html">Trending</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="news.html">News</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled">Disabled</a>
+                        <a class="nav-link" href="sports.html">Sports</a>
+                    </li>
+                    <li class="nav-item d-sm-none d-md-block d-none d-sm-block">
+                        <a class="nav-link " href="entertainment.html">Entertainment</a>
                     </li>
                 </ul>
-                </div>
+
+
+        <div class="position-relative mt-2">
+                <img src="../images/astronomy.jpeg" class="card-img" alt="stars">
+              <h2 class="text-white position-absolute bottom-0 ps-2 pb-1">Galaxy</h2>
+
 
             </div>
-            <!-- Right column -->
-            <div class="col-lg-3">
-                <!-- Right sidebar -->
-                <!-- Add your right sidebar content here -->
-            </div>
 
-            <!--
-                    <div class="sidebar">
-                        <i class="fab fa-twitter fa-2x"></i><br/>
 
-                        <div class="wd-left-sidebar">
-                            <div>
-                                <a href="../home.html" class="left-list active">
-                                    <i class="fa-solid fa-house"></i>
-                                    <span class="wd-nav-list">Home</span>
-                                </a>
+
+<!--      list of tuits    &ndash;&gt;-->
+            <ul class="list-group ">
+                <li class="list-group-item">
+                    <div class="row">
+
+                        <div class="col-9 col-md-10">
+                            <div class="text-secondary">Web Development</div>
+                            <div><span class="post-head">ReactJS</span>
+                                <span>
+                                    <i class="fa-solid fa-check-circle"></i>
+                                </span>
+                                <span class="text-secondary">- 2h</span>
 
                             </div>
+                            <div class="post-text me-2">
+                                React.js is a component based front end library that makes it very easy to build Single
+                                Page Applications or SPAs
+                            </div>
+                        </div>
+                        <!--   tuit account image-->
+                        <div class="col-3 col-md-2">
+                            <img src="../images/reactjs.png" class="float-end rounded-3" width="90px" alt="React.js">
+                        </div>
+                    </div>
+
+                </li>
+
+
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-9 col-md-10">
+
+                            <div><span class="post-head">JavaScript</span>
+                                <span>
+                                    <i class="fa-solid fa-check-circle"></i>
+                                </span>
+                                <span class="text-secondary">- 2h</span>
+
+                            </div>
+                            <div class="post-text me-2">
+                                JavaScript is programming language that can run on browsers as well as desktops
+                            </div>
+                        </div>
+                        <!--  tuit account image-->
+                        <div class="col-3 col-md-2">
+                            <img src="../images/JavaScript-logo.png" class="float-end rounded-3 ms-1" width="90px"
+                                 alt="React.js">
+                        </div>
+                        <div class="text-secondary">123K Tweets</div>
+                    </div>
+
+                </li>
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-9 col-md-10">
+                            <div class="text-secondary">Web Development</div>
+                            <div><span class="post-head">JQuery</span>
+                                <span>
+                                    <i class="fa-solid fa-check-circle"></i>
+                                </span>
+
+                            </div>
+                            <div class="text-secondary">123K Tweets</div>
 
                         </div>
-                        <div class="wd-left-sidebar ">
-                            <a href="#" class="left-list">
-                                <i class="fa-solid fa-magnifying-glass"></i>
-                                <span class="wd-nav-list">Explore</span>
-                            </a>
+                        <!-- tuit account image-->
+                        <div class="col-3 col-md-2">
+                            <img src="../images/jquery-logo.png" class="float-end rounded-3 " width="90px"
+                                 alt="React.js">
                         </div>
-                        <div class="wd-left-sidebar ">
-                            <a href="#" class="left-list">
-                                <i class="fa-solid fa-bell"></i>
-                                <span class="wd-nav-list">Notifications</span>
-                            </a>
-                        </div>
-                        <div class="wd-left-sidebar ">
-                            <a href="#" class="left-list">
-                                <i class="fa-solid fa-envelope"></i>
-                                <span class="wd-nav-list">Messages</span>
-                            </a>
+                    </div>
+
+                </li>
+
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-9 col-md-10">
+                            <div class="text-secondary">Web Development</div>
+                            <div><span class="post-head">NodeJs</span>
+                                <span>
+                                    <i class="fa-solid fa-check-circle"></i>
+                                </span>
+
+                            </div>
+                            <div class="text-secondary">123K Tweets</div>
+
                         </div>
 
-                        <div class="wd-left-sidebar ">
-                            <a href="../bookmarks/bookmarks-css.html" class="left-list">
-                                <i class="fa-solid fa-bookmark"></i>
-                                <span class="wd-nav-list">Bookmarks</span>
-                            </a>
+                        <div class="col-3 col-md-2">
+                            <img src="../images/nodejs.png" class="float-end rounded-3" width="90px" alt="React.js">
                         </div>
+                    </div>
 
-                        <div class="wd-left-sidebar ">
-                            <a href="#" class="left-list">
-                                <i class="fa-solid fa-list"></i>
-                                <span class="wd-nav-list">Lists</span>
-                            </a>
-                        </div>
+                </li>
 
-                        <div class="wd-left-sidebar ">
-                            <a href="#" class="left-list">
-                                <i class="fa-solid fa-user"></i>
-                                <span class="wd-nav-list">Profile</span>
-                            </a>
-                        </div>
-                        <div class="wd-left-sidebar ">
-                            <a href="#" class="left-list">
-                                <i class="fas fa-ellipsis-h"></i>
+            </ul>
 
-                                <span class="wd-nav-list">More</span>
-                            </a>
-                        </div>
-                        <i class="fa-ellipsis-h fa-inverse"></i>
-                    </div>-->
         </div>
+        <!-- Right column -->
+        <div class="d-none d-md-none d-lg-block col-lg-4 col-xl-4 col-xxl-4">
+            <!-- Right who to follow list -->
+            <div class="list-group">
+                <div class="list-group-item fw-bolder">
+                    Who to follow
+                </div>
+                <div class="list-group-item">
+                    <div class="row align-items-center justify-content-xl-around">
+                        <div class="col-lg-2 col-xl-2 col-xxl-2">
+                            <img src="../images/java-logo.png" width="50px" height="50px" class="rounded-circle"
+                                 alt="Java Logo"/>
+                        </div>
+                        <div class="col-lg-6 col-xl-6 col-xxl-7 text-nowrap">
+                            <div class="fw-bolder">
+                                Java
+                                <span><i class="fa-solid fa-check-circle"></i></span>
+                            </div>
+                            <div>@Java</div>
+                        </div>
+                        <div class="col-lg-1 col-xl-3 col-xxl-3">
+                            <button type="button" class="btn btn-primary rounded-pill">Follow</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-group-item">
+                    <div class="row align-items-center justify-content-xl-around">
+                        <div class="col-lg-2 col-xl-2 col-xxl-2">
+                            <img src="../images/relativityspace-logo.jpeg" width="50px" class="rounded-circle"
+                                 alt="Relative Space Logo"/>
+                        </div>
+                        <div class="col-lg-6 col-xl-6 col-xxl-7 text-nowrap">
+                            <div class="fw-bolder">
+                                Relativity Space
+                                <span><i class="fas fa-check-circle"></i></span>
+                            </div>
+                            <div>@relativityspace</div>
+                        </div>
+                        <div class="col-lg-1 col-xl-3 col-xxl-3">
+                            <button type="button" class="btn btn-primary rounded-pill">Follow</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-group-item">
+                    <div class="row align-items-center justify-content-xl-around">
+                        <div class="col-lg-2 col-xl-2 col-xxl-2">
+                            <img src="../images/virgingalactic-logo.png" width="50px" class="rounded-circle"
+                                 alt="Virgin Galactic Logo"/>
+                        </div>
+                        <div class="col-lg-6 col-xl-6 col-xxl-7 text-nowrap">
+                            <div class="fw-bolder">
+                                Virgin Galactic
+                                <span><i class="fas fa-check-circle"></i></span>
+                            </div>
+                            <div>@virgingalactic</div>
+                        </div>
+                        <div class="col-lg-1 col-xl-3 col-xxl-3">
+                            <button type="button" class="btn btn-primary rounded-pill">Follow</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-group-item">
+                    <div class="row align-items-center justify-content-xl-around">
+                        <div class="col-lg-2 col-xl-2 col-xxl-2">
+                            <img src="../images/NASA-Logo.png" width="50px" class="rounded-circle" alt="NASA Logo"/>
+                        </div>
+                        <div class="col-lg-6 col-xl-6 col-xxl-7 text-nowrap">
+                            <div class="fw-bolder">
+                                NASA
+                                <span><i class="fas fa-check-circle"></i></span>
+                            </div>
+                            <div>@NASA</div>
+                        </div>
+                        <div class="col-lg-1 col-xl-3 col-xxl-3">
+                            <button type="button" class="btn btn-primary rounded-pill">Follow</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="list-group-item">
+                    <div class="row align-items-center justify-content-xl-around">
+                        <div class="col-lg-2 col-xl-2 col-xxl-2">
+                            <img src="../images/tesla-logo.png" width="50px" class="rounded-circle" alt="Tesla Logo"/>
+                        </div>
+                        <div class="col-lg-6 col-xl-6 col-xxl-7 text-nowrap">
+                            <div class="fw-bolder">
+                                Tesla
+                                <span><i class="fas fa-check-circle"></i></span>
+                            </div>
+                            <div>@Tesla</div>
+                        </div>
+                        <div class="col-lg-1 col-xl-3 col-xxl-3">
+                            <button type="button" class="btn btn-primary rounded-pill">Follow</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
-        <!--     right sidebar-->
-
-
+        </div>
     </div>
+
+    <!--
+            <div class="sidebar">
+                <i class="fab fa-twitter fa-2x"></i><br/>
+
+                <div class="wd-left-sidebar">
+                    <div>
+                        <a href="../home.html" class="left-list active">
+                            <i class="fa-solid fa-house"></i>
+                            <span class="wd-nav-list">Home</span>
+                        </a>
+
+                    </div>
+
+                </div>
+                <div class="wd-left-sidebar ">
+                    <a href="#" class="left-list">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <span class="wd-nav-list">Explore</span>
+                    </a>
+                </div>
+                <div class="wd-left-sidebar ">
+                    <a href="#" class="left-list">
+                        <i class="fa-solid fa-bell"></i>
+                        <span class="wd-nav-list">Notifications</span>
+                    </a>
+                </div>
+                <div class="wd-left-sidebar ">
+                    <a href="#" class="left-list">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span class="wd-nav-list">Messages</span>
+                    </a>
+                </div>
+
+                <div class="wd-left-sidebar ">
+                    <a href="../bookmarks/bookmarks-css.html" class="left-list">
+                        <i class="fa-solid fa-bookmark"></i>
+                        <span class="wd-nav-list">Bookmarks</span>
+                    </a>
+                </div>
+
+                <div class="wd-left-sidebar ">
+                    <a href="#" class="left-list">
+                        <i class="fa-solid fa-list"></i>
+                        <span class="wd-nav-list">Lists</span>
+                    </a>
+                </div>
+
+                <div class="wd-left-sidebar ">
+                    <a href="#" class="left-list">
+                        <i class="fa-solid fa-user"></i>
+                        <span class="wd-nav-list">Profile</span>
+                    </a>
+                </div>
+                <div class="wd-left-sidebar ">
+                    <a href="#" class="left-list">
+                        <i class="fas fa-ellipsis-h"></i>
+
+                        <span class="wd-nav-list">More</span>
+                    </a>
+                </div>
+                <i class="fa-ellipsis-h fa-inverse"></i>
+            </div>-->
+</div>
+
+
+<!--     right sidebar-->
+
+
+</div>
 </div>
 </body>
 </html>

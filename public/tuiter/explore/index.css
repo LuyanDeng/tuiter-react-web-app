@@ -1,10 +1,171 @@
+* {
+    box-sizing: border-box;
+}
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+    }
+
+    .wd-container {
+        margin: 40px;
 
 
-.sidebar h2{
-    font-weight: 800;
-    font-size: 20px;
-    margin-right: 20px;
-}
-.sidebar .material-symbols-outlined .fab fa-twitter fa-2x{
-    padding: 20px;
-}
+    }
+
+    /* Style the top navigation bar */
+    .wd-navbar {
+        overflow: hidden;
+        background-color: white;
+
+    }
+
+    /* Style the navigation bar links */
+    .wd-navbar a {
+        float: left;
+        display: block;
+        color: gray;
+        text-align: center;
+        padding: 40px 40px;
+        text-decoration: none;
+
+    }
+
+    .wd-navbar ul {
+        list-style-type: none;
+        margin: 0;
+        padding-left: 10px;
+        overflow: hidden;
+
+
+    }
+
+    .wd-navbar li {
+        float: left;
+    }
+
+    /* Change color on hover */
+    .wd-navbar li a:hover {
+        background-color: white;
+        color: darkgray;
+        border-bottom: 5px solid #1DA1F2;;
+
+
+    }
+
+    /* Column container */
+    .wd-row {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+        position: relative;
+    }
+
+
+    /* Main column */
+    .wd-main {
+        flex: 70%;
+        background-color: white;
+        padding: 20px;
+
+    }
+
+    /* Fake image, just for this example */
+    .wd-landing-img {
+
+        width: 100%;
+        height: 300px;
+        background-image: url('../images/astronamy1.jpeg');
+        background-size: cover;
+        background-position: center;
+        color: white;
+        text-align: left;
+        line-height: 550px;
+
+
+    }
+
+    .wd-text2 {
+
+        top: 400px;
+        left: 10px;
+        font-size: 24px;
+        color: white;
+
+    }
+
+    .wd-widgets {
+        flex: 0.3;
+
+
+    }
+
+    .wd-widgets__input {
+        display: flex;
+        align-items: center;
+        background-color: #e6ecf0;
+        padding: 10px;
+        border-radius: 20px;
+        margin-top: 10px;
+        margin-left: 20px;
+
+
+    }
+
+    .wd-widgets__input input {
+        border: none;
+        background-color: #e6ecf0;
+    }
+
+    .wd-widgets__searchIcon {
+        color: gray;
+    }
+
+    .wd-gear-icon {
+        text-decoration: none;
+        color: #1DA1F2;
+        float: right;
+        padding: 10px;
+
+    }
+
+    .wd-bottom-left {
+        position: absolute;
+        color: white;
+        bottom: 8px;
+        left: 16px;
+    }
+
+    .wd-post ul {
+        list-style: none;
+        padding: 10px;
+
+    }
+
+    .wd-trending {
+        color: darkgray;
+        font-size: 12px;
+        padding: 2px;
+
+    }
+
+    .wd-topic {
+        font-weight: bolder;
+        color: black;
+        font-size: 16px;
+        padding: 2px;
+    }
+
+    .wd-tweet-count {
+        color: darkgray;
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    .wd-post li {
+        padding: 10px;
+    }
+
+    .wd-more-icon {
+        float: right;
+    }
