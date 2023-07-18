@@ -175,6 +175,7 @@ table {
 
 .wd-more-icon {
     float: right;
+
 }
 
 /*body {
@@ -188,8 +189,12 @@ table {
 
 .container-fluid {
     max-width: 1400px;
+
+    padding: 40px;
     display: grid;
     flex-wrap: wrap;
+
+
 }
 
 .list-group {
