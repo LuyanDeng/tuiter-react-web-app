@@ -6,6 +6,7 @@
     <title>HTML Labs</title>
     <link href="index.css" rel="stylesheet"/>
     <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="../../vendor/fontawesome/css/all.css" rel="stylesheet"/>
 </head>
 
 <body>
@@ -145,7 +146,7 @@
         <option selected value="SCIFI">Science Fiction</option>
         <option value="FANTASY">Fantasy</option>
     </select>
-    <select name="role" value=""
+    <select name="role" value=""></select>
     <h3>Select many</h3>
     <label for="select-many-genre">Favorite movie genres:</label><br/>
     <select id="select-many-genre" multiple>
@@ -165,8 +166,8 @@
     <label for="radio-drama">Drama</label><br/>
     <input type="radio" value="SCIFI" name="radio-genre" id="radio-scifi" checked/>
     <label for="radio-scifi">Science Fiction</label><br/>
-    <input type="radio" value="FANTASY" name="radio-genre" id=radio-fantasy"/>
-    <label for=radio-fantasy">Fantacy</label><br/>
+    <input type="radio" value="FANTASY" name="radio-genre" id=radio-fantasy" />
+    <label for="radio-fantasy">Fantasy</label><br/>
 
     <h2 class="head_color">Checkboxes</h2>
     <label>Favorite movie genre:</label>
@@ -642,14 +643,14 @@
     <div class="mb-3">
         <label for="input1" class="form-label">Email address</label>
         <input type="email" class="form-control"
-               id="input1" title ="email" placeholder="name@example.com">
+               id="input1" title="email" placeholder="name@example.com">
     </div>
     <div class="mb-3">
         <label for="textarea1" class="form-label">
             Example textarea</label>
         <textarea class="form-control" id="textarea1" rows="3"></textarea>
     </div>
-<!-- Styling Dropdowns -->
+    <!-- Styling Dropdowns -->
 
     <h3>
         <a href="https://getbootstrap.com/docs/5.1/forms/select/">
@@ -663,9 +664,9 @@
         <option value="3">Three</option>
     </select>
 
-<!-- Styling Switches   -->
+    <!-- Styling Switches   -->
     <h3>
-    <a href="https://getbootstrap.com/docs/5.1/forms/checks-radios/#switches">Switches</a>
+        <a href="https://getbootstrap.com/docs/5.1/forms/checks-radios/#switches">Switches</a>
     </h3>
     <div class="form-check form-switch">
         <input class="form-check-input"
@@ -705,7 +706,7 @@
         <input class="form-check-input" type="checkbox" id="switch5">
         <label class="form-check-label" for="switch5">additional check</label>
     </div>
-<!-- Styling Range and Sliders   -->
+    <!-- Styling Range and Sliders   -->
     <h3>
         <a href="https://getbootstrap.com/docs/5.1/forms/range/#steps">
             Range
@@ -721,12 +722,12 @@
            step="0.5"
            id="range1"/>
 
-<!--    Styling Addons-->
+    <!--    Styling Addons-->
     <h3><a href="https://getbootstrap.com/docs/5.1/forms/input-group/">Addons</a></h3>
     <div class="input-group mb-3">
         <span class="input-group-text">$</span>
         <span class="input-group-text">0.00</span>
-        <input type="text" class="form-control" id ="cash1">
+        <input type="text" class="form-control" id="cash1">
         <label class="form-control" for="cash1">cash amount</label>
     </div>
 
@@ -735,10 +736,10 @@
         <span class="input-group-text">$</span>
         <span class="input-group-text">0.00</span>
     </div>
-<!-- Making Forms Responsive -->
+    <!-- Making Forms Responsive -->
     <h3><a href="https://getbootstrap.com/docs/5.1/forms/layout/#horizontal-form">Responsive forms</a></h3>
     <div class="mb-3 row">
-        <label for="email1"
+
         <label for="email1"
                class="col-sm-2 ol-form-label">
             Email</label>
@@ -769,7 +770,7 @@
             rows="3"></textarea>
         </div>
     </div>
-<!--responsive form-->
+    <!--responsive form-->
     <h3><a href="https://getbootstrap.com/docs/5.1/forms/layout/#horizontal-form">Responsive forms</a>
     </h3>
     <form>
@@ -791,7 +792,8 @@
         </div>
         <fieldset class="row mb-3">
             <legend class="col-form-label col-sm-2 pt-0">
-                Radios</legend>
+                Radios
+            </legend>
             <div class="col-sm-10">
                 <div class="form-check">
                     <input class="form-check-input" type="radio"
@@ -830,8 +832,109 @@
         <button type="submit" class="btn btn-primary">Sign in</button>
     </form>
 
+    <h2><a href="https://getbootstrap.com/docs/5.1/components/navs-tabs/">Tabs</a></h2>
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link active" href="#">Active</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1">Disabled</a>
+        </li>
+    </ul>
+
+    <h2>
+        <a href="https://getbootstrap.com/docs/5.1/components/card/">
+            Cards
+        </a>
+    </h2>
+    <div class="card" style="width: 18rem;">
+        <img src="../../tuiter/images/Starship.jpg..webp"
+             class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+                Some quick example text to build on the card
+                title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+
+    <!--    icons-->
+    <h2>Simple icons</h2>
+    <i class="fa fa-cog"></i>
+    <i class="fa fa-heart"></i>
+    <i class="fa fa-share"></i>
+    <i class="fa fa-comment"></i><br/>
+    <i class="fa fa-image"></i>
+    <i class="fa fa-chart-bar"></i>
+    <i class="fa fa-calendar"></i>
+    <i class="fa fa-smile"></i>
+
+    <h2>Resizing icons</h2>
+    <i class="fa fa-cog fa-2x"></i>
+    <i class="fa fa-heart fa-2x"></i>
+    <i class="fa fa-share fa-3x"></i>
+    <i class="fa fa-comment fa-3x"></i><br/>
+    <i class="fa fa-image fa-3x"></i>
+    <i class="fa fa-chart-bar fa-4x"></i>
+    <i class="fa fa-calendar" style="font-size: 5em"></i>
+    <i class="fa fa-smile" style="font-size: 3.5em"></i>
+
+    <h2>Coloring icons</h2>
+    <i class="fa fa-cog fa-2x" style="color: tomato"></i>
+    <i class="fa fa-heart fa-2x" style="color: tomato"></i>
+    <i class="fa fa-share fa-3x" style="color: #5ec15b"></i><br/>
+    <i class="fa fa-comment fa-3x" style="color: #19d49e"></i>
+    <i class="fa fa-image fa-3x" style="color: rgb(234,123,12)"></i>
+    <i class="fa fa-chart-bar fa-4x" style="color: rgb(123,234,123)"></i>
 
 
+    <h2>Brand icons</h2>
+    <i class="fab fa-twitter fa-2x"></i><br/>
+    <i class="fab fa-facebook fa-2x"></i><br/>
+    <i class="fab fa-apple fa-2x"></i><br/>
+
+
+    <h2>Stacking icons</h2>
+    <span class="fa-stack fa-2x">
+<i class="fas fa-square fa-stack-2x"></i>
+<i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+</span><br/>
+    <span class="fa-stack fa-2x">
+<i class="fas fa-circle fa-stack-2x"></i>
+<i class="fas fa-flag fa-stack-1x fa-inverse"></i>
+</span><br/>
+    <span class="fa-stack fa-2x">
+<i class="fas fa-camera fa-stack-1x"></i>
+<i class="fas fa-ban fa-stack-2x" style="color:Tomato"></i>
+</span><br/>
+
+    <h2>Rotating icons</h2>
+    <div class="fa-4x">
+        <i class="fas fa-snowboarding"></i>
+        <i class="fas fa-snowboarding fa-rotate-90"></i>
+        <i class="fas fa-snowboarding fa-rotate-180"></i><br/>
+        <i class="fas fa-snowboarding fa-rotate-270"></i>
+        <i class="fas fa-snowboarding fa-flip-horizontal"></i>
+        <i class="fas fa-snowboarding fa-flip-vertical"></i><br/>
+        <i class="fas fa-snowboarding fa-flip-both"></i><br/>
+    </div>
+
+    <h2>Animating icons</h2>
+    <div class="fa-3x">
+        <i class="fas fa-spinner fa-spin"></i>
+        <i class="fas fa-circle-notch fa-spin"></i>
+        <i class="fas fa-sync fa-spin"></i><br/>
+        <i class="fas fa-cog fa-spin"></i>
+        <i class="fas fa-spinner fa-pulse"></i>
+        <i class="fas fa-stroopwafel fa-spin"></i>
+    </div>
 </div>
 </body>
 
