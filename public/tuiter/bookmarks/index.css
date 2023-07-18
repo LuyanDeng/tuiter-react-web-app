@@ -4,24 +4,21 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    max-width: 1300px;
+    max-width: 1400px;
     margin: 40px;
+    padding:10px;
+
 }
 
 
 .wd-container {
     max-width: 1400px;
+    margin: 40px;
+    padding:10px;
 
 
 }
-/*body {
-    display: flex;
-    height: 100vh;
-    max-width: 1300px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 10px;
-}*/
+
 .wd-bookmarks-arrow{
     width: 48px;
     height: 48px;
@@ -31,15 +28,7 @@ body {
     width: 40px;
     height: 40px;
 }
-.wd-head ul{
-    list-style-type: none;
-    margin: 0;
-    padding-left: 10px;
-    overflow: hidden;
-}
-.wd-head li {
-    float: left;
-}
+
 
 .wd-more-icon {
     float: right;
@@ -48,7 +37,7 @@ body {
 .wd-bookmarks-title {
     font-size: 20px;
     font-weight: bolder;
-    padding-left: 80px;
+    padding-left: 30px;
 
 }
 .wd-bookmarks-handle {
@@ -59,9 +48,10 @@ body {
 
 table {
     padding:0;
-
     width: 100%;
 }
+
+
 td.wd-arrow{
     width:20px;
 
@@ -78,8 +68,7 @@ td.wd-nested{
 }
 .wd-bookmarks-title-border-bottom {
     width: 598px;
-    border-bottom-color: lightgray;
-    border-bottom-style: solid;
+    border: 1px solid #ddd;
 }
 .wd-bookmarks-border-bottom {
     max-width: 598px;
@@ -110,35 +99,45 @@ td.wd-nested{
     font-size: 15px;
     color: darkgrey;
 }
-.wd-bookmarks-post-main-content {
-    font-size: 15px;
-    max-width: 506px;
-    margin-right: 16px;
-    margin-bottom: 12px;
+.wd-bookmarks-post-main-text {
+    font-size: 16px;
+    max-width: 590px;
+    margin-right: 20px;
+    margin-bottom: 10px;
 }
-.wd-bookmarks-post-image-and-content {
-    width: 504px;
+.wd-bookmarks-post-card-img{
+    width: 600px;
     border-radius: 20px;
-    border-width: 1px;
-    border-color: lightgray;
-    border-style: solid;
+    border: 1px solid #ddd;
 }
-.wd-bookmarks-post-image-and-content img{
-    width: 504px;
-    height: 264px;
+.wd-bookmarks-post-card-img img{
+    width: 600px;
+    height: 300px;
     overflow: hidden;
-    border-radius: 20px 20px 0 0;
-    border-width: 1px;
-    border-color: lightgray;
-    border-bottom-style: solid;
+    border-radius: 18px 18px 0 0;
+    border: 1px solid #ddd;
 }
-.wd-bookmarks-post-image-title-content {
-    font-size: 15px;
+.wd-bookmarks-post-src {
+    font-size: 12px;
+    padding: 2px;
+    color: darkgray;
+}
+
+
+
+.wd-bookmarks-post-text {
+    font-size: 16px;
     padding: 12px;
 }
+.wd-bookmarks-post-moretext{
+    font-size: 16px;
+    padding: 2px;
+    padding-bottom: 10px;
+}
 .wd-bookmarks-post-icon {
-    width: 506px;
-    padding-top: 12px;
+    width: 600px;
+    padding-top: 10px;
+    padding-bottom: 2px;
     display: flex;
     justify-content: space-between;
 }
@@ -160,4 +159,12 @@ td.wd-nested{
 }
 .wd-certified-icon{
     color: #1DA1F2;
+}
+.wd-post-icon{
+    width:30px;
+    height: 30px;
+    color: #1DA1F2;;
+}
+.wd-select-icon{
+    color: deeppink;
 }
