@@ -187,6 +187,7 @@ table {
 }*/
 
 .container-fluid {
+    max-width: 1400px;
     display: grid;
     flex-wrap: wrap;
 }
