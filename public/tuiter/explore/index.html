@@ -10,7 +10,9 @@
     <link href=
                   "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
           rel="stylesheet"/>
+    <link href="../bookmarks/index.css" rel="stylesheet"/>
     <link href="../explore/index.css" rel="stylesheet"/>
+
 </head>
 <body>
 
@@ -58,85 +60,83 @@
 </span>
 
 
-
                     <span class="d-none d-xl-inline">More</span>
                 </a>
             </div>
 
-            <a role="button" href="#" class="btn tweet-button rounded-pill ">Tweet</a>
+            <a role="button" href="#" class="btn tweet-button ">Tweet</a>
         </div>
 
         <!--Center Column-->
 
-            <!-- Main content -->
-<!--        col is 10 when is medium or less medium-->
+        <!-- Main content -->
+        <!--        col is 10 when is medium or less medium-->
 
-            <div class="d-block col-10 col-sm-10 col-md-10 col-lg-7 col-xl-6 col-xxl-6">
-                <!--  Search filed-->
-                <div class="row align-items-center mx-0">
+        <div class="d-block col-10 col-sm-10 col-md-10 col-lg-7 col-xl-6 col-xxl-6">
+            <!--  Search filed-->
+            <div class="row align-items-center">
 
 
-                        <div class="search-column bg-white ">
-                            <div class="input-group bg-white">
-                                <span class="input-group-text bg-white border-end-0 rounded-end rounded-pill">
+                <div class="search-column bg-white ">
+                    <div class="input-group ">
+                                <span class="input-group-text ">
                             <i class="fas fa-search"></i>
                                     </span>
 
-                                <input type="text"
+                        <input type="text"
 
-                                   class="form-control border-start-0 rounded-start rounded-pill me-3"
-                                   placeholder="Search">
-                                <div class="col-1 wd-cog pe-0">
-                                    <a href="explore-settings.html" class="fas fa-cog fa-2x text-decoration-none  float-end "></a>
-                                </div>
-                            </div>
+                               class="form-control border-start-0 rounded-start rounded-pill me-3"
+                               placeholder="Search">
+                        <div class="col-1 wd-gear-icon">
+                            <a href="explore-settings.html"
+                               class="fas fa-cog fa-2x text-decoration-none"></a>
                         </div>
-
+                    </div>
                 </div>
-
-
-            <!--      Navigation     Tab-->
-
-                <ul class="nav nav-tabs">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="for-you.html">For you</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="trending.html">Trending</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="news.html">News</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="sports.html">Sports</a>
-                    </li>
-                    <li class="nav-item d-sm-none d-md-block d-none d-sm-block">
-                        <a class="nav-link " href="entertainment.html">Entertainment</a>
-                    </li>
-                </ul>
-
-
-        <div class="position-relative mt-2">
-                <img src="../images/astronomy.jpeg" class="card-img" alt="stars">
-              <h2 class="text-white position-absolute bottom-0 ps-2 pb-1">Galaxy</h2>
-
 
             </div>
 
 
 
-<!--      list of tuits    &ndash;&gt;-->
+            <!--      Navigation     Tab-->
+
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="for-you.html">For you</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="trending.html">Trending</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="news.html">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sports.html">Sports</a>
+                </li>
+                <li class="nav-item d-sm-none d-md-block d-none d-sm-block">
+                    <a class="nav-link " href="entertainment.html">Entertainment</a>
+                </li>
+            </ul>
+
+
+            <div class="large-image ">
+                <img src="../images/astronomy.jpeg" class="card-img" alt="stars">
+                <h2 class="img-text">Galaxy</h2>
+            </div>
+
+
+            <!--      list of tuits    ;-->
             <ul class="list-group ">
                 <li class="list-group-item">
                     <div class="row">
 
                         <div class="col-9 col-md-10">
-                            <div class="text-secondary">Web Development</div>
+                            <div class="wd-addon-title">Web Development</div>
                             <div><span class="wd-topic">ReactJS</span>
-                                <span>
-                                    <i class="fa-solid fa-check-circle"></i>
+                                <span class="wd-certified-icon">
+                                    <i class="fa-solid fa-check-circle wd-certified-icon"></i>
                                 </span>
-                                <span class="text-secondary">- 2h</span>
+                                <span class="wd-trending">- 2h</span>
 
                             </div>
                             <div class="wd-topic">
@@ -158,10 +158,10 @@
                         <div class="col-9 col-md-10">
 
                             <div><span class="wd-topic">JavaScript</span>
-                                <span>
+                                <span class="wd-certified-icon">
                                     <i class="fa-solid fa-check-circle"></i>
                                 </span>
-                                <span class="text-secondary">- 2h</span>
+                                <span class="wd-trending">- 2h</span>
 
                             </div>
                             <div class="wd-topic">
@@ -180,9 +180,9 @@
                 <li class="list-group-item">
                     <div class="row">
                         <div class="col-9 col-md-10">
-                            <div class="text-secondary">Web Development</div>
+                            <div class="wd-addon-title">Web Development</div>
                             <div><span class="wd-topic">JQuery</span>
-                                <span>
+                                <span class="wd-certified-icon">
                                     <i class="fa-solid fa-check-circle"></i>
                                 </span>
 
@@ -202,9 +202,9 @@
                 <li class="list-group-item">
                     <div class="row">
                         <div class="col-9 col-md-10">
-                            <div class="text-secondary">Web Development</div>
+                            <div class="wd-addon-title">Web Development</div>
                             <div><span class="wd-topic">NodeJs</span>
-                                <span>
+                                <span class="wd-certified-icon">
                                     <i class="fa-solid fa-check-circle"></i>
                                 </span>
 
@@ -325,75 +325,8 @@
         </div>
     </div>
 
-    <!--
-            <div class="sidebar">
-                <i class="fab fa-twitter fa-2x"></i><br/>
-
-                <div class="wd-left-sidebar">
-                    <div>
-                        <a href="../home.html" class="left-list active">
-                            <i class="fa-solid fa-house"></i>
-                            <span class="wd-nav-list">Home</span>
-                        </a>
-
-                    </div>
-
-                </div>
-                <div class="wd-left-sidebar ">
-                    <a href="#" class="left-list">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        <span class="wd-nav-list">Explore</span>
-                    </a>
-                </div>
-                <div class="wd-left-sidebar ">
-                    <a href="#" class="left-list">
-                        <i class="fa-solid fa-bell"></i>
-                        <span class="wd-nav-list">Notifications</span>
-                    </a>
-                </div>
-                <div class="wd-left-sidebar ">
-                    <a href="#" class="left-list">
-                        <i class="fa-solid fa-envelope"></i>
-                        <span class="wd-nav-list">Messages</span>
-                    </a>
-                </div>
-
-                <div class="wd-left-sidebar ">
-                    <a href="../bookmarks/bookmarks-css.html" class="left-list">
-                        <i class="fa-solid fa-bookmark"></i>
-                        <span class="wd-nav-list">Bookmarks</span>
-                    </a>
-                </div>
-
-                <div class="wd-left-sidebar ">
-                    <a href="#" class="left-list">
-                        <i class="fa-solid fa-list"></i>
-                        <span class="wd-nav-list">Lists</span>
-                    </a>
-                </div>
-
-                <div class="wd-left-sidebar ">
-                    <a href="#" class="left-list">
-                        <i class="fa-solid fa-user"></i>
-                        <span class="wd-nav-list">Profile</span>
-                    </a>
-                </div>
-                <div class="wd-left-sidebar ">
-                    <a href="#" class="left-list">
-                        <i class="fas fa-ellipsis-h"></i>
-
-                        <span class="wd-nav-list">More</span>
-                    </a>
-                </div>
-                <i class="fa-ellipsis-h fa-inverse"></i>
-            </div>-->
-</div>
-
-
-<!--     right sidebar-->
-
 
 </div>
-</div>
+
 </body>
 </html>

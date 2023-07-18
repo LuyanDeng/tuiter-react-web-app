@@ -71,7 +71,11 @@ body {
 
 }
 
-/* Fake image, just for this example */
+.wd-row.list-group {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
 .wd-landing-img {
 
     width: 100%;
@@ -135,6 +139,11 @@ table {
     padding: 10px;
 
 }
+.large-image{
+    position:relative;
+    margin-top:2px;
+
+}
 
 .wd-bottom-left {
     position: absolute;
@@ -188,19 +197,16 @@ table {
 }*/
 
 .container-fluid {
-    max-width: 1400px;
+    max-width: 100%;
 
-    padding: 40px;
     display: grid;
     flex-wrap: wrap;
-
-
 }
 
 .list-group {
     border-right: 1px;
     flex: 0.2;
-    margin-top: 0px;
+    margin-top: 0;
 
 }
 
@@ -213,6 +219,7 @@ table {
     color: #ffffff;
 }
 
+
 .tweet-button {
     background-color: #1DA1F2;
     color: #ffffff;
@@ -221,6 +228,7 @@ table {
     text-align: center;
     text-decoration: none;
     width: 100%;
+    border-radius: 18px;
 
 
 }
@@ -230,7 +238,10 @@ table {
         font-size: 0.7rem;
     }
 }
-
+.input-group-text{
+    background-color: white;
+    border-radius:18px;
+}
 
 .card-img {
     position: relative;
@@ -244,6 +255,20 @@ table {
     padding-left: 0.5rem;
 
 }
+.btn {
+    padding:5px;
+}
 
-
+.img-text{
+    color: white;
+    position: absolute;
+    bottom: 0;
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+.wd-addon-title{
+    font-size: 16px;
+    padding: 2px;
+    color:#6c757d;
+}
 

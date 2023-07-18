@@ -10,7 +10,7 @@ body {
 
 
 .wd-container {
-    margin: 40px;
+    max-width: 1400px;
 
 
 }
@@ -157,4 +157,7 @@ td.wd-nested{
     width:20px;
     height: 20px;
     color: #1DA1F2;;
+}
+.wd-certified-icon{
+    color: #1DA1F2;
 }
