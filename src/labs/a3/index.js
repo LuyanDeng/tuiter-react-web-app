@@ -10,7 +10,6 @@ function Assignment3 (){
             <TodoList/>
             <TodoItem/>
             <ConditionalOutput/>
-
             <JavaScript/>
 
         </div>
