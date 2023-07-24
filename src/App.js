@@ -13,6 +13,7 @@ function App() {
                     <Route path="/labs/*"   element={<Labs/>}/>
                     <Route path="/hello"    element={<HelloWorld/>}/>
                     <Route path="/tuiter/*" element={<Tuiter/>}/>
+
                 </Routes>
             </div>
         </HashRouter>
