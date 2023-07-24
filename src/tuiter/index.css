@@ -1,0 +1,10 @@
+@media (max-width: 768px) {
+    .col-3 {
+        display: none;
+    }
+
+    .list-group-item.active {
+        background-color: #1DA1F2;
+        color: #ffffff;
+    }
+}

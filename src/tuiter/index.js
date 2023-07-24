@@ -17,10 +17,10 @@ function Tuiter(){
             {/*<Link to="/tuiter">Tuiter</Link>*/}
             <Nav/>
             <div className="row">
-                <div className="col-2">
+                <div className="col-2 col-md-2 col-lg-1 col-xl-2">
                     <NavigationSidebar />
                 </div>
-                <div className="col-7">
+                <div className="col-10 col-md-10 col-lg-7 col-xl-7">
 
                         <Routes>
                             <Route path="/home" element={<HomeScreen />} />
@@ -31,7 +31,8 @@ function Tuiter(){
 
 
                 </div>
-                <div className="col-3">
+                <div className="d-none d-sm-none d-md-none d-lg-block col-lg-3 col-xl-3">
+
                     <WhoToFollowList/>
 
                 </div>
