@@ -1,6 +1,8 @@
 //import {Link} from "react-router-dom";
 import Assignment3 from "./a3";
 import Nav from "../nav";
+import {Route, Routes} from "react-router";
+import Assignment4 from "./a4";
 
 function Labs() {
     return(
@@ -9,8 +11,13 @@ function Labs() {
             {/*<Link to="/hello">Hello</Link> |*/}
             {/*<Link to="/tuiter">Tuiter</Link>*/}
             <Nav/>
+            <Routes>
+                <Route path="a3" element={<Assignment3/>}/>
+                <Route path="a4" element={<Assignment4/>}/>
 
-            <Assignment3/>
+            </Routes>
+
+
         </div>
     )
 }

@@ -3,6 +3,8 @@ import HelloWorld from "./labs/a3/hello-world";
 import Tuiter from "./tuiter";
 import {HashRouter, Navigate} from "react-router-dom";
 import {Routes, Route} from "react-router";
+import Assignment3 from "./labs/a3";
+import Assignment4 from "./labs/a4";
 
 function App() {
     return (
