@@ -7,4 +7,10 @@
         background-color: #1DA1F2;
         color: #ffffff;
     }
-}
+
+
+@media (max-width: 768px) {
+    .d-xl-inline {
+        display: none;
+    }
+}}
