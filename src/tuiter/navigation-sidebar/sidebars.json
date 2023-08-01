@@ -3,14 +3,14 @@
     "_id": 1,
     "stack": false,
     "source": "/",
-    "iconMain": "fa-brands fa-twitter",
+    "iconMain": "faTwitter",
     "iconSub": "",
     "name": ""
   },
   {
     "_id": 2,
     "stack": false,
-    "iconMain": "fa-solid fa-home",
+    "iconMain": "faHome",
     "iconSub": "",
     "name": "home"
   },

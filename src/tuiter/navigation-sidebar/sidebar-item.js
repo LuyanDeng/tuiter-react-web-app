@@ -6,7 +6,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 const SideBarItem = ({
                                    sidebar = {
                                        stack: false,
-                                       iconMain: "fa-brands fa-twitter",
+                                       iconMain: "faTwitter",
                                        iconSub: "",
                                        name: ""
                                    },
