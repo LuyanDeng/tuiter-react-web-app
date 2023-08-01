@@ -31,7 +31,13 @@ const NavigationSidebar = () => {
 
             {/*}*/}
             <div className="sidebar">
-                <BsTwitter className="twitter-icon"/>
+
+                    <BsTwitter className="twitter-icon"/>
+
+                <Link to={"/tuiter/ "} className={`list-group-item
+                ${active === "home" ? "active" : ""}`}>
+
+                </Link>
                 <Link to={"/tuiter/home "} className={`list-group-item
                 ${active === "home" ? "active" : ""}`}>
 

@@ -11,13 +11,17 @@
     margin-bottom: 20px;
 
 }
+
 @media (min-width: 0) and (max-width: 1250px){
     .sidebar {
         flex: 0.1;
-        max-width: 88px;
+        max-width: 120px;
     }
     .sidebarOption > span {
         display: none;
+    }
+    .sidebarIcon{
+        width: 66px;
     }
 
 }
