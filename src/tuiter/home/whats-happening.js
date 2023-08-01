@@ -34,17 +34,17 @@ const WhatsHappening = () => {
                             onClick={tuitClickHandler}>
                         Tuit
                     </button>
-                    <div className="text-primary fs-2">
+                    <div className="text-primary fs-2 me-1 ">
 
 
-                        <AiOutlinePicture className="me-3"/>
-                        <HiOutlineGif className="me-3"/>
-                        <MdFormatListBulleted className="me-3"/>
-                        <BsEmojiSmile className="me-3"/>
-                        <TbCalendarStats className="me-3"/>
-                        <HiOutlineLocationMarker className="me-3"/>
-                        <BiBold className="me-3"/>
-                        <BiItalic className="me-3"/>
+                        <AiOutlinePicture className="me-1"/>
+                        <HiOutlineGif className="me-1"/>
+                        <MdFormatListBulleted className="me-1"/>
+                        <BsEmojiSmile className="me-1"/>
+                        <TbCalendarStats className="me-1"/>
+                        <HiOutlineLocationMarker className=" me-1"/>
+                        <BiBold className=" me-1 "/>
+                        <BiItalic className="me-1"/>
 
                     </div>
                 </div>

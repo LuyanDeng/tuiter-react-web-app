@@ -4,9 +4,9 @@ import React from "react";
 function SidebarOption({ text, Icon }) {
     return (
        // <div className={`sidebarOption ${active && "sidebarOption--active"}`}>
-        <div className="sidebarOption d-flex align-items-center">
-            <Icon className="me-2"/>
-            <span className="d-none d-lg-inline">{text}</span>
+        <div className="sidebarOption d-lg-flex align-items-center">
+            <Icon className="col-xl-2 me-2"/>
+            <span className="d-none d-xl-inline col-xl-10">{text}</span>
         </div>
     );
 }

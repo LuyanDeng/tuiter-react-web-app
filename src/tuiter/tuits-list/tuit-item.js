@@ -27,13 +27,14 @@ const TuitItem = (
         dispatch(deleteTuit(id));
     }
     return(
-        <li className="list-group-item">
+        <li className="list-group-item ">
             <div className="row">
                 <div className="col-auto">
                     <img width={70} className="float-left rounded-circle " src={`/images/${tuit.image}`} alt="..."/>
                 </div>
-                <div className="col-10">
-                    <div>
+                <div className="col-10 col-sm-10 col-md-10 col-lg-6 col-xl-6 col-xxl-6">
+
+                <div>
                         <i className="bi bi-x-lg float-end"
                            onClick={() => deleteTuitHandler(tuit._id)}></i>
                         <span className={"fw-bolder pe-1"}>{tuit.userName}</span>
