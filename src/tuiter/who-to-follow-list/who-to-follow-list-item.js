@@ -9,7 +9,7 @@ const WhoToFollowItem = (
 ) => {
 
     return (
-        <li className="list-group-item">
+        <li className="list-group-item d-none d-md-block">
             <div className="row align-items-center">
                 <div className="d-block col-xxl-2 col-xl-3 col-lg-3">
                     <img className="rounded-circle" height={46} src={`/images/${who.avatarIcon}`} alt={'logo'}/>

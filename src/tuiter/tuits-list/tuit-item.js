@@ -2,6 +2,7 @@ import React from "react";
 import {useDispatch} from "react-redux";
 import TuitStats from "./tuit-stats";
 import {deleteTuit} from "../tuits/tuits-reducer";
+import {BsFillCheckCircleFill} from "react-icons/bs";
 
 const TuitItem = (
     {
@@ -36,6 +37,7 @@ const TuitItem = (
                         <i className="bi bi-x-lg float-end"
                            onClick={() => deleteTuitHandler(tuit._id)}></i>
                         <span className={"fw-bolder pe-1"}>{tuit.userName}</span>
+                        <span><BsFillCheckCircleFill className="me-2 " style={{ color: "#1DA1F2" }}/></span>
                         <span className="text-secondary">{tuit.handle}{'\u00B7'} {tuit.time}</span>
                     </div>
                     {/*<div className="fw-bolder">{tuit.topic}</div>*/}

@@ -7,7 +7,9 @@
         background-color: #1DA1F2;
         color: #ffffff;
     }
-
+.custom-icon-color{
+    color: #1DA1F2;
+}
 
 @media (max-width: 768px) {
     .d-xl-inline {
