@@ -1,5 +1,6 @@
 import React from "react";
 import {Link, useLocation} from "react-router-dom";
+import "./sidebar.css"
 //import sidebars from "./sidebars.json";
 //import SideBarItem from "./sidebar-item";
 
@@ -18,7 +19,7 @@ const NavigationSidebar = () => {
     //const [location] = React.useState(useLocation().pathname);
     //const [moreActive, setMoreActive] = React.useState(false);
     return (
-        <div className="list-group">
+        <div className="list-group ">
 
             {/*{sidebars.map((sidebar) =>{*/}
             {/*    return(*/}
