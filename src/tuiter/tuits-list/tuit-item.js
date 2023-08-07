@@ -1,9 +1,9 @@
 import React from "react";
 import {useDispatch} from "react-redux";
 import TuitStats from "./tuit-stats";
-import {deleteTuit} from "../tuits/tuits-reducer";
+//import {deleteTuit} from "../tuits/tuits-reducer";
 import {BsFillCheckCircleFill} from "react-icons/bs";
-
+import {deleteTuitThunk} from "../../services/tuits-thunks";
 const TuitItem = (
     {
         tuit = {
@@ -24,15 +24,16 @@ const TuitItem = (
 )=> {
     const dispatch = useDispatch();
     const deleteTuitHandler = (id) => {
-        dispatch(deleteTuit(id));
+       // dispatch(deleteTuit(id));
+        dispatch(deleteTuitThunk(id)); // invoke the deleteTuitThunk from the remove icon
     }
     return(
         <li className="list-group-item ">
             <div className="row">
-                <div className="col-auto">
+                <div className="col-2">
                     <img width={70} className="float-left rounded-circle " src={`/images/${tuit.image}`} alt="..."/>
                 </div>
-                <div className="col-12">
+                <div className="col-10">
                 <div>
                         <i className="bi bi-x-lg float-end"
                            onClick={() => deleteTuitHandler(tuit._id)}></i>

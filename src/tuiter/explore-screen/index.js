@@ -5,7 +5,7 @@ import { GoGear } from "react-icons/go";
 import "./index.css";
 import TuitSummaryList from "../tuit-summary-list";
 import {Route, Routes} from "react-router";
-import ProfileScreen from "../profile-screen";
+import ProfileScreen from "../user/profile-screen";
 function ExploreScreen() {
     return (
         <>

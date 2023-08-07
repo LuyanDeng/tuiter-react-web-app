@@ -16,7 +16,10 @@ const TuitSummaryItem = (
         <li className="list-group-item">
             <div className="row">
                 <div className="col-10">
-                    <div>{tuit.userName}<span><BsFillCheckCircleFill/></span> . {tuit.time}</div>
+                    <div><span className={"fw-bolder pe-1"}>{tuit.userName}</span>
+                        <span><BsFillCheckCircleFill className="me-2 " style={{ color: "#1DA1F2" }}/></span>
+                        <span className="text-secondary">{tuit.handle}{'\u00B7'} {tuit.time}</span>
+                    </div>
                     <div className="fw-bolder">{tuit.topic}</div>
                     <div>{tuit.title}</div>
                 </div>

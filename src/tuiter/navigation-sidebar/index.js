@@ -11,15 +11,17 @@ import {SlEnvolope} from "react-icons/sl";
 import {AiOutlineBell} from "react-icons/ai";
 import {BiHash, BiSolidHome} from "react-icons/bi";
 import SidebarOption from "./sidebar-option";
+import { useSelector } from "react-redux";
 
 const NavigationSidebar = () => {
+    const { currentUser } = useSelector((state) => state.user);
     const {pathname} = useLocation();
    const [ignore, tuiter, active] = pathname.split("/");
     //const links = ["home",     "explore",   "notifications", "messages", "bookmarks", "lists", "profile",  "more"];
     //const [location] = React.useState(useLocation().pathname);
     //const [moreActive, setMoreActive] = React.useState(false);
     return (
-        <div className="list-group ">
+        <div className="list-group align-items-center">
 
             {/*{sidebars.map((sidebar) =>{*/}
             {/*    return(*/}
@@ -34,11 +36,8 @@ const NavigationSidebar = () => {
 
                     <BsTwitter className="twitter-icon"/>
 
-                <Link to={"/tuiter/ "} className={`list-group-item
-                ${active === "home" ? "active" : ""}`}>
 
-                </Link>
-                <Link to={"/tuiter/home "} className={`list-group-item
+                <Link to={"/tuiter/home"}  className={`list-group-item
                 ${active === "home" ? "active" : ""}`}>
 
                     <SidebarOption
@@ -103,6 +102,9 @@ const NavigationSidebar = () => {
                     <button className="btn btn-primary btn-block rounded-pill">Tuit</button>
                 </div>
             </div>
+            {!currentUser && <Link className="list-group" to="/tuiter/login">   Login   </Link>}
+            {!currentUser && <Link className="list-group" to="/tuiter/register">Register</Link>}
+            { currentUser && <Link className="list-group" to="/tuiter/profile"> Profile </Link>}
         </div>
             );
             }
