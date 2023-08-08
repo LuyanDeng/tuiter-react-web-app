@@ -53,7 +53,9 @@ function ProfileScreen() {
                                    setProfile(newProfile);
                                }}/>
                     </div>
+                    
                 </div>
+                
             )}
             <button
                 onClick={() => {
