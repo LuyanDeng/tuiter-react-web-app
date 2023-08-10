@@ -1,5 +1,6 @@
 import axios from "axios"
-const SERVER_API_URL = process.env.REACT_APP_SERVER_API_URL; // get the URL to the remote API URL to auth controller
+//const SERVER_API_URL = process.env.REACT_APP_SERVER_API_URL; // get the URL to the remote API URL to auth controller
+const SERVER_API_URL = "https://tuiter-node-server-app-olek.onrender.com/api";
 const USERS_URL = `${SERVER_API_URL}/users`;
 // configure axios to support cookies for passing credentials
 const api = axios.create({withCredentials:true});
