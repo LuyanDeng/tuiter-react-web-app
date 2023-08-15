@@ -27,7 +27,7 @@ export const profile = async () => {
 };
 export const updateUser = async (user) => {
     //const response = await api.put(`${USERS_URL}`, user);
-    const response = await axios.put(`${USER_API}/${id}`, user);
+    const response = await api.put(`${USER_API}/${id}`, user);
     return response.data;
 };
 export const register = async ({ username, password }) => {
