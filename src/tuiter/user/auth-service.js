@@ -1,6 +1,7 @@
 import axios from "axios"
 //const SERVER_API_URL = process.env.REACT_APP_SERVER_API_URL; // get the URL to the remote API URL to auth controller
-const SERVER_API_URL = "https://tuiter-node-server-app-a6-stzb.onrender.com/api";
+//const SERVER_API_URL = "https://tuiter-node-server-app-a6-stzb.onrender.com/api";
+const SERVER_API_URL = "http://localhost:4000/api";
 const USERS_URL = `${SERVER_API_URL}/users`;
 const BASE_API = '${SERVER_API_URL}/api';
 // configure axios to support cookies for passing credentials
@@ -17,17 +18,19 @@ export const logout = async () => {
     return response.data;
 };
 export const profile = async () => {
-    try{
+   
         const response = await api.post(`${USERS_URL}/profile`);
+        console.log('auth-service response')
+        console.log(response.data)
         return response;  // response
-    }catch (e){
-        alert(e);
-    }
+    
 
 };
 export const updateUser = async (user) => {
-    const response = await api.put(`${USERS_URL}`, user);
-    //const response = await api.put(`${USERS_URL}/${user._id}`, user);
+    //const response = await axios.put(`${USERS_URL}`, user);
+    console.log(user);
+    console.log(`${USERS_URL}/${user._id}`);
+    const response = await api.put(`${USERS_URL}/${user._id}`, user);
     return response.data; 
 };
 export const register = async ({ username, password }) => {

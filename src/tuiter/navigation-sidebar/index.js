@@ -85,14 +85,14 @@ const NavigationSidebar = () => {
                         Icon={CiViewList}
                     />
                 </Link>
-                <Link to={"/tuiter/profile "} className={`list-group-item
+                {currentUser &&<Link to={"/tuiter/profile "} className={`list-group-item
                 ${active === "profile" ? "active" : ""}`}>
                     <SidebarOption
                         text="Profile"
                         Icon={BsPerson}
-
+                        
                     />
-                </Link>
+                </Link>}
                 <Link to={"/tuiter/more "} className={`list-group-item
                 ${active === "more" ? "active" : ""}`}>
                     <SidebarOption text="More" Icon={CiCircleMore}/>
