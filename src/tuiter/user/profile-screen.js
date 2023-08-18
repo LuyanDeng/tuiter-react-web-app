@@ -28,6 +28,7 @@ function ProfileScreen() {
     
         loadProfile();
     }, []);
+    console.log(profile)
 
     return (
         <div>

@@ -9,8 +9,10 @@ const api = axios.create({withCredentials:true});
 
 export const login = async ({username,password}) => {
     // implement login service function
-    const response = await  api.post(`${USERS_URL}/login`,{username,password});
+    const response = await api.post(`${USERS_URL}/login`,{username,password});
     const user =response.data;
+    console.log('auth-service login')
+    console.log(user)
     return user;
 }
 export const logout = async () => {
@@ -20,21 +22,22 @@ export const logout = async () => {
 export const profile = async () => {
    
         const response = await api.post(`${USERS_URL}/profile`);
-        console.log('auth-service response')
-        console.log(response.data)
+        // console.log('auth-service response')
+        // console.log(response.data)
         return response;  // response
     
 
 };
 export const updateUser = async (user) => {
     //const response = await axios.put(`${USERS_URL}`, user);
-    console.log(user);
-    console.log(`${USERS_URL}/${user._id}`);
+
     const response = await api.put(`${USERS_URL}/${user._id}`, user);
     return response.data; 
 };
-export const register = async ({ username, password }) => {
-    const response = await  api.post(`${USERS_URL}/register`,{username,password});
-    const user =response.data;
+export const register = async ({ username, password }) => { 
+    const response = await api.post(`${USERS_URL}/register`,{ username, password});
+    const user = response.data;
+    console.log('auth-service register')
+    console.log(user)
     return user;
 }
